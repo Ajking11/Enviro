@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/add_new_product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+
+        <ImageView
+            android:id="@+id/mixing_auger"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            android:importantForAccessibility="no" />
+        <ImageView
+            android:id="@+id/brackets"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            android:importantForAccessibility="no" />
+        <ImageView
+            android:id="@+id/cement_auger"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            android:importantForAccessibility="no" />
+        <ImageView
+            android:id="@+id/cement_bin"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+        <ImageView
+            android:id="@+id/mixing_bowel"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/agg_gate"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/agg_bin_mf"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/agg_bin_ab"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+        <ImageView
+            android:id="@+id/body"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/conveyor_belt"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/auger"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/chain_oiler"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+        <ImageView
+            android:id="@+id/fbr_feeder"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/electrical_system"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/water_system"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+        <ImageView
+            android:id="@+id/air_system"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear5_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear4_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+        <ImageView
+            android:id="@+id/admix_system"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

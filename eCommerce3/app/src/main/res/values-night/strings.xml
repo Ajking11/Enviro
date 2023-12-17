@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_logo">app_logo</string>
+    <string name="designed_by_operators_for_operators">Designed by Operators for Operators</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="i_am_an_admin">I am an Admin</string>
+    <string name="i_not_admin" />
+    <string name="i_am_not_admin">I am not Admin</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="username">Username</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="product_name_hint">Product Name.....</string>
+    <string name="product_description_hint">Product Description.....</string>
+    <string name="product_price_hint">Product Price.....</string>
+    <string name="add_product_words">Add Product</string>
+    <string name="uploadpicture_product">UploadPicture</string>
+    <string name="menu_products">Products</string>
+    <string name="menu_Settings">Settings</string>
+</resources>

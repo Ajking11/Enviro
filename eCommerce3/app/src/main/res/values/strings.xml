@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">eCommerce</string>
+    <string name="already_have_an_account_log_in">Already have an Account? log in</string>
+    <string name="join_now">Join Now</string>
+    <string name="app_logo">app_logo</string>
+    <string name="designed_by_operators_for_operators">Designed by Operators for Operators</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="i_am_an_admin">I am an Admin</string>
+    <string name="i_not_admin" />
+    <string name="i_am_not_admin">I am not Admin</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="username">Username</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="product_name_hint">Product Name.....</string>
+    <string name="product_description_hint">Product Description.....</string>
+    <string name="product_price_hint">Product Price.....</string>
+    <string name="add_product_words">Add Product</string>
+    <string name="uploadpicture_product">UploadPicture</string>
+    <string name="menu_products">Products</string>
+    <string name="menu_Settings">Settings</string>
+</resources>
