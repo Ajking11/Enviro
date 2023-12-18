@@ -10,4 +10,11 @@ public class Prevalent
     public static final String UserPhoneKey = "UserPhone";
     public static final String UserPasswordKey = "UserPassword";
 
+    public static String getVinId() {
+        if (currentOnlineUser != null) {
+            return currentOnlineUser.getVinId();
+        }
+        return null;
+    }
 }
+

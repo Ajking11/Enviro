@@ -185,6 +185,16 @@
             android:src="@drawable/baseline_insert_photo_24"
             />
 
+        <Button
+        android:id="@+id/qrscanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:layout_below="@+id/admix_system"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
 
     </LinearLayout>
 

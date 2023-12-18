@@ -26,6 +26,10 @@ import com.example.ecommerce.Prevalent.Prevalent;
 import com.example.ecommerce.R;
 import com.example.ecommerce.SettingsActivity;
 import com.example.ecommerce.ViewHolder.ProductViewHolder;
+import com.example.ecommerce.truckbuild.CalibrationActivity;
+import com.example.ecommerce.truckbuild.MaintenanceActivity;
+import com.example.ecommerce.truckbuild.TruckBuild;
+import com.example.ecommerce.truckbuild.TruckbatchingActivity;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -76,14 +80,26 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        MenuItem truckBuildItem = navigationView.getMenu().findItem(R.id.truck_build);
+        Menu navMenu = navigationView.getMenu();
 
-        if (Prevalent.currentOnlineUser.getVinId() != null && !Prevalent.currentOnlineUser.getVinId().isEmpty()) {
-            // User has a vinId, show the truck_build menu item
+        MenuItem truckBuildItem = navMenu.findItem(R.id.truck_build);
+        MenuItem truckBatchingItem = navMenu.findItem(R.id.Truck_batching);
+        MenuItem truckMaintenanceItem = navMenu.findItem(R.id.Truck_Maintenance);
+        MenuItem truckCalibrationItem = navMenu.findItem(R.id.Truck_Calibration);
+
+        if (Prevalent.currentOnlineUser != null) {
+            String vinId = Prevalent.currentOnlineUser.getVinId();
+            // User has a vinId, show the menu items
             truckBuildItem.setVisible(true);
+            truckBatchingItem.setVisible(true);
+            truckMaintenanceItem.setVisible(true);
+            truckCalibrationItem.setVisible(true);
         } else {
-            // User doesn't have a vinId, hide the truck_build menu item
+            // User doesn't have a vinId, hide the menu items
             truckBuildItem.setVisible(false);
+            truckBatchingItem.setVisible(false);
+            truckMaintenanceItem.setVisible(false);
+            truckCalibrationItem.setVisible(false);
         }
 
         View headerView = navigationView.getHeaderView(0);
@@ -182,13 +198,10 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == R.id.nav_home)
         {
-
+            Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+            startActivity(intent);
         }
 //        else if (id == R.id.)
-//        {
-//
-//        }
-//        else if (id == R.id.nav_categories)
 //        {
 //
 //        }
@@ -206,6 +219,21 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             finish();
         }
+
+     else if (id == R.id.truck_build) {
+        Intent intent = new Intent(HomeActivity.this, TruckBuild.class);
+        startActivity(intent);
+    } else if (id == R.id.Truck_batching) {
+        Intent intent = new Intent(HomeActivity.this, TruckbatchingActivity.class);
+        startActivity(intent);
+    } else if (id == R.id.Truck_Maintenance) {
+        Intent intent = new Intent(HomeActivity.this, MaintenanceActivity.class);
+        startActivity(intent);
+    } else if (id == R.id.Truck_Calibration) {
+            Intent intent = new Intent(HomeActivity.this, CalibrationActivity.class);
+            startActivity(intent);
+
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

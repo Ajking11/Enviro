@@ -21,9 +21,21 @@
             android:icon="@drawable/baseline_logout_nav"
             android:title="Logout" />
         <item
-            android:id="@+id/tuck_build"
+            android:id="@+id/truck_build"
             android:icon="@drawable/volumetricmixer_baseline"
             android:title="TruckBuild" />
+        <item
+            android:id="@+id/Truck_batching"
+            android:icon="@drawable/baseline_batchsilo"
+            android:title="Batching" />
+        <item
+            android:id="@+id/Truck_Maintenance"
+            android:icon="@drawable/baseline_maintenance"
+            android:title="Maintenance" />
+        <item
+            android:id="@+id/Truck_Calibration"
+            android:icon="@drawable/baseline_calibration"
+            android:title="Calibration" />
 
     </group>
 </menu>

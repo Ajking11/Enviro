@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Button;
+
+import com.journeyapps.barcodescanner.CaptureActivity;
+import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 
 public class AdminCategoryActivity extends AppCompatActivity
 {
@@ -14,6 +18,8 @@ private ImageView mixing_bowel,agg_gate,agg_bin_mf,agg_bin_ab;
 private ImageView body,conveyor_belt,auger,chain_oiler;
 private ImageView fbr_feeder,electrical_system,water_system,air_system;
 private ImageView admix_system;
+
+    private static final int ZXING_SCANNER_REQUEST = 1;
 
     public AdminCategoryActivity() {
     }
@@ -24,6 +30,26 @@ private ImageView admix_system;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_category);
 
+        Button btnScanQRCode = findViewById(R.id.qrscanner);
+        btnScanQRCode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Open the QR code scanner
+                Intent intent = new Intent(AdminCategoryActivity.this, CaptureActivity.class);
+                startActivityForResult(intent, ZXING_SCANNER_REQUEST);
+            }
+        });
+    }
+
+    // Handle the result from the QR code scanner
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == ZXING_SCANNER_REQUEST && resultCode == RESULT_OK) {
+            // Handle the scanned QR code here
+            String scannedCode = data.getStringExtra("SCAN_RESULT");
+            // TODO: Process the scannedCode as needed
+        }
 
         mixing_Auger = findViewById(R.id.mixing_auger);
         brackets = findViewById(R.id.brackets);
