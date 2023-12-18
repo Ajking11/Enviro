@@ -76,12 +76,23 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        MenuItem truckBuildItem = navigationView.getMenu().findItem(R.id.truck_build);
+
+        if (Prevalent.currentOnlineUser.getVinId() != null && !Prevalent.currentOnlineUser.getVinId().isEmpty()) {
+            // User has a vinId, show the truck_build menu item
+            truckBuildItem.setVisible(true);
+        } else {
+            // User doesn't have a vinId, hide the truck_build menu item
+            truckBuildItem.setVisible(false);
+        }
+
         View headerView = navigationView.getHeaderView(0);
         TextView userNameTextView = headerView.findViewById(R.id.user_Profile_Name);
         CircleImageView profileImageView = headerView.findViewById(R.id.user_profile_image);
 
         userNameTextView.setText(Prevalent.currentOnlineUser.getName());
         Picasso.get().load(Prevalent.currentOnlineUser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
+
 
 
         recyclerView = findViewById(R.id.recycler_menu);

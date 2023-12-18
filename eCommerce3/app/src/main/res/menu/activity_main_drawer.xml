@@ -20,6 +20,10 @@
             android:id="@+id/nav_Logout"
             android:icon="@drawable/baseline_logout_nav"
             android:title="Logout" />
+        <item
+            android:id="@+id/tuck_build"
+            android:icon="@drawable/volumetricmixer_baseline"
+            android:title="TruckBuild" />
 
     </group>
 </menu>
